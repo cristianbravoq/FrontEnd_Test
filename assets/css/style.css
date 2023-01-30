@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #241d2c;
+    --second-color: #7352a79e;
+    --third-color: #e2d2e5b8;
+    --four-color: #00C9A7;
+    ;
+}
+
+@font-face {
+    font-family: 'Nunito-ExtraLight';
+    src: url('../fonts/Nunito-ExtraLight.ttf');
+    font-style: normal;
+    font-weight: 300;
+  }
+@font-face {
+    font-family: 'Nunito-LightItalic';
+    src: url('../fonts/Nunito-LightItalic.ttf');
+    font-weight: bolder;
+  }
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../fonts/Nunito-Regular.ttf');
+    font-style: normal;
+    font-weight: bold;
+  }
+
+html[data-theme='light'] {
+    --primary-color: #F5F5F4;
+    --text-color: #231f20;
+    --link-color: #845EC2;
+}
+
+html[data-theme='dark'] {
+    --background-color: #121416d8;
+    --text-color: #F5F5F4;
+    --link-color: #845EC2;
+}
+
+::placeholder { 
+    color: var(--second-color);
+    font-family: 'Nunito-LightItalic';
+    font-weight: 00;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family:'Nunito-ExtraLight';
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, option, select {
+    border-radius: 7px;
+    border: hidden;
+    height: 2.5em;
+    padding: 0px 7px;
+    font-family: 'Nunito-LightItalic';
+    font-size: 17px;
+    font-weight:900;
+}
+
+input, div {
+    display: block;
+    width: 100%;
+    text-align: start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}

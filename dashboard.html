@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd-Test</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/buttons.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+<body>
+    <div class="container__dashboard">
+        <div class="container__menu">
+            <div class="container__button">
+                 <button class="btn__menu buttonClass" id="btn__update">
+                    Update Movie List
+                 </button>
+            </div>
+            <div class="container__input">
+                <div>
+                    <label for="">Search by title:</label>
+                    <input type="text" id="Title" placeholder="Filter by title">
+                </div>
+                <div>
+                    <label for="">Date range:</label>
+                    <input type="text" id="Date" placeholder="Filter by date">
+                </div>
+                <div class="sortBy">
+                    <label for="">Sort by:
+                    <select name="SortBy" id="SortBy">
+                        <option value="Title">Title</option>
+                        <option value="Year">Year</option>
+                    </select></label>
+                    <label class="switch">
+                        <input type="checkbox" id="Switch" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="container__submit">
+                <button class="btn__menu buttonClass" id="btn__submit">Submit</button>
+            </div>
+        </div>
+        <div class="container__board" >
+            <div class="board__header">
+                <p>Title</p>
+                <p>Year</p>
+                <p>Type</p>
+                <p>Poster</p>
+            </div>
+            <div class="board__items" id="Board">
+        </div>
+    </div>
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/dashboard.js" type="module"></script>
+</body>
+</html>

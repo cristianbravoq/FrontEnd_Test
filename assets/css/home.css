@@ -1,0 +1,48 @@
+input, div {
+    margin: 8px 0;
+}
+
+.container__form {
+    width: clamp(250px, 75% , 420px);
+    padding: 20px;
+    color: var(--third-color);
+    border-radius: 17px;
+    background-color: rgba(150, 144, 144, 0.418);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.container__checkbox, .container__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.container__checkbox, .container__menu > * {
+    width: max-content;
+    white-space: nowrap;
+}
+
+.btn__log {
+    text-align: center;   
+}
+
+form > input {
+    display: inline;
+    height: 2.7em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type=submit] {
+    font-family: 'Nunito-LightItalic';
+    font-size: 17px;
+    font-weight:900;
+}
+
+input[type=submit]:hover {
+    background-color: var(--third-color);
+}

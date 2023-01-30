@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd-Test</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__form">
+        <form id="Form">
+          <!-- Username -->
+
+          <label for="name">Username:</label>
+          <input type="name" id="Username" placeholder=" Enter a username" />
+          <!-- Password -->
+          <label for="username">Password:</label>
+          <input type="password" id="Password" placeholder=" Enter a password" />
+          <!-- Log Menu -->
+          <div class="container__menu">
+            <div class="container__checkbox">
+              <input id="checkbox" type="checkbox" />
+              <label class="check" for="checkbox">Remember me</label>
+            </div>
+            <p>
+              <a href="#">Forgot your password?</a>
+            </p>
+          </div>
+          <!-- Submit Button -->
+          <a href="./dashboard.html">
+          <input class="btn__log" type="button" value="Login" id="Button"/>
+          </a>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/auth.js" type="module"></script>
+  </body>
+</html>
