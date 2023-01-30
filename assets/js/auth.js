@@ -49,7 +49,10 @@ function ValidateText(string) {
   var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
   for (var i = 0; i < string.length; i++)
     if (filtro.indexOf(string.charAt(i)) != -1) out += string.charAt(i);
-  return out.length == string.length ? true : false;
+
+  const bool = out.length == string.length ? true : false;
+  if(!bool) _username.classList.add('focus');
+  return bool
 }
 
 function ValidatePassword(string) {
@@ -71,18 +74,18 @@ function ValidatePassword(string) {
   for (var i = 0; i < out.length; i++)
     if (filtro3.indexOf(out.charAt(i)) != -1) out3 += out.charAt(i);
   const characters = out3.length > 1 ? true : false;
-
-  return characters && uppercase && length ? true : false;
+  const bool = characters && uppercase && length ? true : false;
+  if(!bool) _password.classList.add('focus');
+  return bool
 }
 
 function ValidateEmail(input) {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (input.match(validRegex)) {
-    // document.form1.text1.focus();
     return true;
   } else {
-    // document.form1.text1.focus();
+    _email.classList.add('focus');
     return false;
   }
 }
@@ -93,8 +96,10 @@ function ValidatePhone(string) {
   var filtro = "+1234567890";
   for (var i = 0; i < string.length; i++)
     if (filtro.indexOf(string.charAt(i)) != -1) out += string.charAt(i);
-    console.log(out)
-  return out.length == string.length && string.length == 9 ? true : false;
+
+  const bool = out.length == string.length && string.length == 9 ? true : false;
+  if(!bool) _phone.classList.add('focus');
+  return bool
 }
 
 function Validation() {
